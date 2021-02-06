@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.List;
 
 @Entity
 @Data
@@ -27,9 +26,9 @@ public class Employee {
     @Column(name = "last_name")
     private String lastName;
 
-    @Column(name = "birthday")
+    @Column(name = "birthdate")
     @JsonFormat(pattern = "dddd-MM-dd")
-    private LocalDate birthday;
+    private LocalDate birthdate;
 
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", referencedColumnName = "user_id")
