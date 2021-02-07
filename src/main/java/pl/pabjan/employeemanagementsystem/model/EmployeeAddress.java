@@ -18,6 +18,9 @@ public class EmployeeAddress {
     @Column(name = "address_id")
     private Long addressId;
 
+    @Column(name = "employee_id")
+    private Long employeeId;
+
     @Column(name = "street")
     private String street;
 
@@ -30,8 +33,5 @@ public class EmployeeAddress {
     @Column(name = "zip_code")
     private String zipCode;
 
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "employee_id", referencedColumnName = "employee_id")
-    private Employee employee;
 
 }

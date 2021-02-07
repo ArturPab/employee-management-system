@@ -20,6 +20,9 @@ public class Employee {
     @Column(name = "employee_id")
     private Long employeeId;
 
+    @Column(name = "user_id")
+    private Long userId;
+
     @Column(name = "name")
     private String name;
 
@@ -27,14 +30,10 @@ public class Employee {
     private String lastName;
 
     @Column(name = "birthdate")
-    @JsonFormat(pattern = "dddd-MM-dd")
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate birthdate;
 
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id", referencedColumnName = "user_id")
-    private User user;
-
-    @OneToOne(cascade = CascadeType.REMOVE)
+   @OneToOne(cascade = CascadeType.REMOVE)
     @JoinColumn(name = "employee_id", updatable = false, insertable = false)
     private EmployeeAddress address;
 

@@ -36,7 +36,8 @@ public class User {
     @Column(name = "enabled")
     private boolean enabled;
 
-    @OneToOne(cascade = CascadeType.REMOVE)
+   @OneToOne(cascade = CascadeType.REMOVE)
     @JoinColumn(name = "user_id", updatable = false, insertable = false)
     private Employee employee;
+
 }

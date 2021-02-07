@@ -18,6 +18,9 @@ public class EmployeeContract {
     @Column(name = "employee_contract_id")
     private Long employeeContractId;
 
+    @Column(name = "employee_id")
+    private Long employeeId;
+
     @Column(name = "job_position")
     private String jobPosition;
 
@@ -26,9 +29,5 @@ public class EmployeeContract {
 
     @Column(name = "salary_in_pln")
     private Integer salaryInPLN;
-
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "employee_id", referencedColumnName = "employee_id")
-    private Employee employee;
 
 }
