@@ -15,3 +15,4 @@ alter table employee_address add constraint FK2 foreign key (employee_id) refere
 
 --changeset apabjan:6
 insert into employee_address (address_id, street, house_number, city, zip_code, employee_id) VALUES (null, 'Street', '60/60', 'Tychy', '43-100', 1);
+insert into employee_address (address_id, street, house_number, city, zip_code, employee_id) VALUES (null, 'Street', '60/60', 'Tychy', '43-100', 2);

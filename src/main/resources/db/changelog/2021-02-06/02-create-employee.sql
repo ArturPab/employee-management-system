@@ -15,3 +15,4 @@ alter table EMPLOYEE add constraint FK1 foreign key (user_id) references USER(us
 --changeset apabjan:4
 
 insert into EMPLOYEE (employee_id, name, last_name, birthdate, user_id) values (null, 'Artur', 'Pabjan', '2000-09-05', 1);
+insert into EMPLOYEE (employee_id, name, last_name, birthdate, user_id) values (null, 'Artur', 'Pabjans', '2000-09-05', 2);

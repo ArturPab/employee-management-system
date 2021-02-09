@@ -14,3 +14,4 @@ CREATE TABLE USER (
 --changeset apabjan:2
 
 insert into USER (user_id, email, password, role, created, enabled) values (null, 'admin@admin.com', 'test', 'admin', '2021-01-18 19:27:05.068335', 1);
+insert into USER (user_id, email, password, role, created, enabled) values (null, 'admin2@admin.com', 'test2', 'admin', '2021-01-31 19:27:05.068335', 1);
