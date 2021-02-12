@@ -33,7 +33,7 @@ public class Employee {
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate birthdate;
 
-   @OneToOne(cascade = CascadeType.REMOVE)
+    @OneToOne(cascade = CascadeType.REMOVE)
     @JoinColumn(name = "employee_id", updatable = false, insertable = false)
     private EmployeeAddress address;
 
