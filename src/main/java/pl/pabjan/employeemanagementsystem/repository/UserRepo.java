@@ -3,7 +3,7 @@ package pl.pabjan.employeemanagementsystem.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
-import pl.pabjan.employeemanagementsystem.model.User;
+import pl.pabjan.employeemanagementsystem.model.account.User;
 
 import java.util.Optional;
 

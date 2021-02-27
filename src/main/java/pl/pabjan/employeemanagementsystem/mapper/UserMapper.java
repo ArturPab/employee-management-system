@@ -4,8 +4,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 import pl.pabjan.employeemanagementsystem.controller.dto.EmployeeRequest;
-import pl.pabjan.employeemanagementsystem.model.User;
-import pl.pabjan.employeemanagementsystem.service.PasswordService;
+import pl.pabjan.employeemanagementsystem.model.account.User;
 
 import java.time.Instant;
 
@@ -21,6 +20,7 @@ public class UserMapper {
         user.setEnabled(true);
         user.setPassword(passwordEncoder.encode(password));
         user.setCreated(Instant.now());
+        user.setRole("USER");
 
         return user;
     }

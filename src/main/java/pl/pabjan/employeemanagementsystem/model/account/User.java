@@ -1,8 +1,9 @@
-package pl.pabjan.employeemanagementsystem.model;
+package pl.pabjan.employeemanagementsystem.model.account;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import pl.pabjan.employeemanagementsystem.model.employee.Employee;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
