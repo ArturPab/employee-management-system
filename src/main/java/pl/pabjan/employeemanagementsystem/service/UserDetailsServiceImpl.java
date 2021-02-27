@@ -8,7 +8,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import pl.pabjan.employeemanagementsystem.model.User;
+import pl.pabjan.employeemanagementsystem.model.account.User;
 import pl.pabjan.employeemanagementsystem.repository.UserRepo;
 import java.util.Collection;
 import java.util.Optional;
