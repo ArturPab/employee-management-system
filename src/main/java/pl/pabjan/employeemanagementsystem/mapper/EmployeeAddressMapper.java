@@ -2,7 +2,7 @@ package pl.pabjan.employeemanagementsystem.mapper;
 
 import org.springframework.stereotype.Component;
 import pl.pabjan.employeemanagementsystem.controller.dto.EmployeeRequest;
-import pl.pabjan.employeemanagementsystem.model.EmployeeAddress;
+import pl.pabjan.employeemanagementsystem.model.employee.EmployeeAddress;
 
 @Component
 public class EmployeeAddressMapper {

@@ -1,4 +1,4 @@
-package pl.pabjan.employeemanagementsystem.model;
+package pl.pabjan.employeemanagementsystem.model.employee;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;

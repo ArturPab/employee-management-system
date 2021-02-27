@@ -2,7 +2,7 @@ package pl.pabjan.employeemanagementsystem.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import pl.pabjan.employeemanagementsystem.model.EmployeeContract;
+import pl.pabjan.employeemanagementsystem.model.employee.EmployeeContract;
 
 import java.util.List;
 

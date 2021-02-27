@@ -3,9 +3,9 @@ package pl.pabjan.employeemanagementsystem.mapper;
 import org.springframework.stereotype.Component;
 import pl.pabjan.employeemanagementsystem.controller.dto.EmployeeRequest;
 import pl.pabjan.employeemanagementsystem.controller.dto.EmployeeResponse;
-import pl.pabjan.employeemanagementsystem.model.Employee;
-import pl.pabjan.employeemanagementsystem.model.EmployeeAddress;
-import pl.pabjan.employeemanagementsystem.model.EmployeeContract;
+import pl.pabjan.employeemanagementsystem.model.employee.Employee;
+import pl.pabjan.employeemanagementsystem.model.employee.EmployeeAddress;
+import pl.pabjan.employeemanagementsystem.model.employee.EmployeeContract;
 
 import java.util.List;
 import java.util.stream.Collectors;
